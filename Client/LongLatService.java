@@ -40,11 +40,8 @@ public class LongLatService {
     private static HttpClient httpClient = new HttpClient(new MultiThreadedHttpConnectionManager());
      
     public static void main(String[] args) throws Exception{
-    	GeoApiContext context = new GeoApiContext().setApiKey("AIzaSyDpCee8Tas3CDrzu88nFA-KEw85d5Kcbtc");
-    	GeocodingResult[] results = GeocodingApi.geocode(context, 
-    			"1600 Amphitheatre Parkway Mountain View, CA 94043");
-    	System.out.println(Results[0].formattedAddress);
-    	//GeocodingApiRequest req = GeocodingApi.newRequest(context).address("Sydney");
+    	//GeoApiContext context = new GeoApiContext().setApiKey("AIzaSyDpCee8Tas3CDrzu88nFA-KEw85d5Kcbtc");
+    	
         LongLatService tDirectionService = new LongLatService();
         tDirectionService.getLongitudeLatitude("Rijnsburgstraat 9-11, Amsterdam, The Netherlands");
     }
