@@ -40,7 +40,7 @@ public class LongLatService {
     private static HttpClient httpClient = new HttpClient(new MultiThreadedHttpConnectionManager());
      
     public static void main(String[] args) throws Exception{
-    	GeoApiContext context = new GeoApiContext().setApiKey("AIzaSyDpCee8Tas3CDrzu88nFA-KEw85d5Kcbtc");
+    	//GeoApiContext context = new GeoApiContext().setApiKey("AIzaSyDpCee8Tas3CDrzu88nFA-KEw85d5Kcbtc");
     	
         LongLatService tDirectionService = new LongLatService();
         tDirectionService.getLongitudeLatitude("Rijnsburgstraat 9-11, Amsterdam, The Netherlands");
